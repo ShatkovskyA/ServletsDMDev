@@ -10,6 +10,7 @@ package src.ru.tern.http.socket;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
+import java.io.IOException;
 
 /**
  * DatagramServerRunner.
@@ -19,7 +20,7 @@ import java.net.SocketException;
  */
 public class DatagramServerRunner {
 
-  public static void main(String[] args) throws SocketException {
+  public static void main(String[] args) throws SocketException, IOException {
 
     // передаем порт, на котором будем работать и оборачиваем в try-catch ресурсы
     try (var datagramServer = new DatagramSocket(7777)) {
@@ -28,7 +29,7 @@ public class DatagramServerRunner {
       byte[] buffer = new byte[512];
 
       // принимаем пакет из класса DatagramRunner
-      DatagramPacket packet = new DatagramPacket(buffer);
+      DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
       datagramServer.receive(packet);
 
       // а теперь получаем данные

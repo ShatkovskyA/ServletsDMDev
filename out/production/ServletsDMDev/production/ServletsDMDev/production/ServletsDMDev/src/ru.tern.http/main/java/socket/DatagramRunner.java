@@ -11,6 +11,8 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
+import java.io.IOException;
+import java.net.UnknownHostException;
 
 /**
  * DatagramRunner.
@@ -20,7 +22,7 @@ import java.net.SocketException;
  */
 public class DatagramRunner {
 
-  public static void main(String[] args) throws SocketException {
+  public static void main(String[] args) throws IOException {
 
     // кому передаем пакет, адрес
     var inetAddress = InetAddress.getByName("localhost");

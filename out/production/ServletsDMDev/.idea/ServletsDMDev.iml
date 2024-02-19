@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ServletsDMDev" level="project" />
+    <orderEntry type="library" name="corretto-18.0" level="project" />
   </component>
 </module>

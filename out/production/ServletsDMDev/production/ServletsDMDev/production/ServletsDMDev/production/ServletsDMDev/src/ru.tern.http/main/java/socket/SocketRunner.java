@@ -1,5 +1,6 @@
 package src.ru.tern.http.socket;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Inet4Address;
@@ -37,7 +38,7 @@ public class SocketRunner {
         // отправлем данные
         var outputStream = new DataOutputStream(socket.getOutputStream());
         // получаем данные
-        var inputStream = new DataOutputStream(socket.getOutputStream());
+        var inputStream = new DataInputStream(socket.getInputStream());
         // для цикла while, чтобы по кругу запрос и ответы отсылать и получать
         var scanner = new Scanner(System.in)) {
 
