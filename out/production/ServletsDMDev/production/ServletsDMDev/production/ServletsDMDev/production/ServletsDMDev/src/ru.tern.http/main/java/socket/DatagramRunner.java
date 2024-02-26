@@ -34,7 +34,7 @@ public class DatagramRunner {
       // var bytes = new byte[512];
 
       // представляем то, что мы хотим отправить, как массив байт
-      var bytes = "Hello from masa fucker UDP client".getBytes();
+      var bytes = "Hello from masa fucker UDP client!!!".getBytes();
 
       // исп. датаграм пакеты для отправки и получения - send отправка пакета на сервер, класс DatagramServerRunner
       DatagramPacket packet = new DatagramPacket(bytes, bytes.length, inetAddress, 7777);
