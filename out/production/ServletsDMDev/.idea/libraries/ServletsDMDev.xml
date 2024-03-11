@@ -2,12 +2,15 @@
   <library name="ServletsDMDev">
     <CLASSES>
       <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/lib" />
     </CLASSES>
     <JAVADOC>
       <root url="file://$PROJECT_DIR$" />
     </JAVADOC>
     <SOURCES>
       <root url="file://$PROJECT_DIR$" />
+      <root url="jar://$USER_HOME$/.ideaLibSources/postgresql-42.7.1-sources.jar!/" />
     </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
   </library>
 </component>
